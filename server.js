@@ -1,7 +1,7 @@
 const io = require('socket.io')(3000)
 
 const users = {}
-
+x = 5;
 io.on('connection', socket => {
   socket.on('new-user', name => {
     users[socket.id] = name
